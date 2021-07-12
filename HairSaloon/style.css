@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: Poppins, sans-serif !important;
+}
+
+p {
+    font-family: 'Merriweather', serif !important;
+}
+
+
+/* ************ Navbar Section *********** */
+
+#navbar {
+    margin-top: 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: .5rem .5rem;
+    background: black !important;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .3);
+}
+
+#navbar .btnnn {
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 20px;
+    background: red;
+    width: 9rem;
+}
+
+#navbar .btnnn:hover {
+    transform: scale(.98);
+    opacity: 0.95;
+}
+
+.navbar .navbar-brand {
+    color: white !important;
+    font-size: 1.9rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    border-radius: 6px;
+}
+
+#navbarSupportedContent a {
+    color: #fff;
+    padding: 10px 6px;
+    font-weight: 900;
+    border-radius: 4px;
+    border: 2px solid transparent;
+}
+
+#navbarSupportedContent a:hover {
+    background: red;
+}
+
+
+/* ************ Home Section *********** */
+
+#home {
+    position: relative;
+    height: 100%;
+}
+
+#home img {
+    height: 100%;
+    background: no-repeat center scroll cover;
+}
+
+#home .carousel-item {
+    width: 100%;
+    height: 93vh;
+    background: no-repeat center scroll cover;
+}
+
+#home .carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: black;
+    opacity: .7;
+}
+
+#home .carousel-caption {
+    position: absolute;
+    top: 13%;
+    left: 13%;
+}
+
+#home .carousel-caption h5 {
+    font-size: 4.5rem;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc;
+}
+
+#home .carousel-caption p {
+    margin-top: 1.4rem;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+#home .btnnn {
+    margin-top: 2.4rem;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    background: red;
+    padding: 10px 20px;
+}
+
+#home .btnnn:hover {
+    background: black;
+    transform: scale(.98);
+}
+
+
+/* ************ About Section *********** */
+
+#about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .about-text {
+    background: red;
+}
+
+#about img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#about .btnnn {
+    background: white;
+    font-size: 27px;
+    color: black;
+    margin-top: 1rem;
+    padding: 7px 32px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#about .btnnn:hover {
+    background: black;
+    transform: scale(.98);
+    color: red;
+}
+
+#about h5 {
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 0px 4px 4px #000;
+    font-weight: 700;
+}
+
+#about hr {
+    display: block;
+    width: 94%;
+    margin: 0 auto;
+    height: 1%;
+    background: #f9f6f6;
+    opacity: 1;
+    box-shadow: 0px 5px 10px #000;
+}
+
+#about span {
+    color: #fff;
+    font-weight: bold;
+}
+
+#about p {
+    margin-top: 1.5rem;
+    font-weight: 500;
+}
+
+#about .about-box {
+    width: 90% !important;
+}
+
+
+/* ************ Service Section *********** */
+
+#service {
+    min-height: 83vh;
+    margin-top: 4rem;
+    background: #eaeaea;
+}
+
+#service .service-box div {
+    background: #e5e5e5;
+    padding-top: 3rem;
+    box-shadow: 15px 20px 20px rgb(0 0 0 / 30%), inset 4px 10px 10px #d4bdbd;
+}
+
+#service h2:first-child {
+    font-size: 4rem;
+    font-weight: 500;
+    text-shadow: 0px 1px 5px red;
+}
+
+#service .btnnn {
+    background: red;
+    font-size: 20px;
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#service .btnnn:hover {
+    background: black;
+    transform: scale(.98);
+    color: red;
+}
+
+
+/* ************ Product Section *********** */
+
+#product {
+    width: 100%;
+    margin: 4rem 0;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    background: #e5e5e5;
+}
+
+#product h2 {
+    font-size: 4rem;
+    font-weight: 500;
+    text-shadow: 0px 1px 5px red;
+}
+
+#product .container {
+    margin-top: 5rem;
+}
+
+#product .owl-carousel div img {
+    border-radius: 10px;
+    display: block;
+    height: 215px !important;
+}
+
+
+/* ************ FAQs Section ***********/
+
+#faq {
+    width: 100%;
+    margin: 4rem 0;
+    background: #e5e5e5;
+}
+
+#faq h2 {
+    font-size: 4rem;
+    font-weight: 500;
+    text-shadow: 0px 1px 5px red;
+}
+
+#faq .container {
+    width: 80%;
+}
+
+#faq .btnnn {
+    width: 20rem;
+    background: red;
+    font-size: 1.8rem;
+    padding: 4px 0px;
+    margin-bottom: 2rem;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#faq .btnnn:hover {
+    background: black;
+    transform: scale(.98);
+    color: red;
+}
+
+
+/* Focus issue resolved */
+
+#faq textarea:focus,
+#faq .accordion button:focus,
+#contact input:focus,
+#contact textarea:focus {
+    box-shadow: none;
+    border-color: rgba(255, 0, 0, .6);
+}
+
+.navbar form input:focus,
+#home .carousel-caption .btnnn:focus {
+    box-shadow: none;
+    border-color: none;
+}
+
+
+/* ************ Faq Section Continue *********** */
+
+#faq .accordion-body {
+    background: linear-gradient(to right, red -112%, white 108%);
+    color: black;
+    font-family: serif;
+}
+
+#faq .row form div:last-child {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+}
+
+#faq .row form p {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#faq .container div:last-child {
+    margin-top: 1rem;
+}
+
+
+/* ************ Contact Section *********** */
+
+#contact {
+    width: 100%;
+    min-height: 90vh;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(206, 0, 0, .6), rgba(0, 0, 0, .6)), url(assets/contact1.jpg) center;
+    background-size: cover;
+}
+
+#contact .contact-box {
+    width: 80% !important;
+}
+
+#contact h2 {
+    font-size: 4rem;
+    color: white;
+    font-weight: 500;
+    text-shadow: 3px 5px 2px black;
+}
+
+#contact .row label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    font-family: 'Times New Roman';
+    margin-bottom: 0;
+}
+
+#contact .btnnn {
+    width: 15rem;
+    background: red;
+    font-size: 1.8rem;
+    padding: 4px 0px;
+    margin-bottom: 1rem;
+    color: white;
+    font-family: 'Times New Roman';
+}
+
+#contact .btnnn:hover {
+    background: black;
+    transform: scale(.98);
+    color: red;
+}
+
+#contact .row .btn-center {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+}
+
+
+/*********** Footer Section *********/
+
+#footerr .footerr-box {
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+
+/* Media queries */
+
+@media (max-width: 767px) {
+    .navbar li a {
+        text-align: center;
+    }
+    .navbar li a:last-child {
+        margin-bottom: 0.7rem;
+    }
+    #home .carousel-caption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 5%;
+    }
+    #home .carousel-caption h5 {
+        font-size: 2.8rem;
+    }
+    #home .carousel-caption p {
+        font-size: 1rem;
+    }
+    #home .btnnn {
+        margin-top: 0.5rem;
+    }
+    #home .carousel-caption button:first-child {
+        padding: 10px 27px;
+    }
+    #about .about-text {
+        margin-top: 1.2rem;
+    }
+    #about .btnnn {
+        margin-top: 0;
+        margin-bottom: 0.8rem;
+    }
+    footer p {
+        text-align: center;
+    }
+}
